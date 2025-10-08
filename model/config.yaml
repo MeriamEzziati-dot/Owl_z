@@ -1,0 +1,102 @@
+workdir : /home/mezziati/Documents/GIT_scaling/OWLZ_6fev/OWL-z_mlt
+
+#QSO
+templates_QSO :   /data/model_data/QSO/templates.list
+MABS_QSO_list :    /results/colors/log_qso.txt
+MABS_GAL_list :    /results/colors/log_gal.txt
+#GAL
+templates_GAL :  /data/model_data/GLX/BC03/log_temp.txt
+templates_QSO_dir :   /data/model_data/QSO/
+templates_GAL_dir :   /data/model_data/GLX/BC03/
+# MLT
+templates_MLT: /data/model_data/LT/MLT_star_templates/
+templates_M_list: /data/model_data/LT/MLT_star_templates/Mstars.txt
+templates_L_list: /data/model_data/LT/MLT_star_templates/Lstars.txt
+templates_T_list: /data/model_data/LT/MLT_star_templates/Tstars.txt
+
+SptM:  /results/colors/spt_M.dat
+SptL: /results/colors/spt_L.dat
+SptT:  /results/colors/spt_T.dat
+
+
+SptM_int:  /results/colors/spt_Mint.txt
+SptL_int: /results/colors/spt_Lint.txt
+SptT_int:  /results/colors/spt_Tint.txt
+
+M_dens:  /data/model_data/LT/spt_M.txt   #Lstars
+L_dens: /data/model_data/LT/spt_L.txt   #Lstars
+T_dens:  /data/model_data/LT/spt_T.txt   #Lstars
+
+#Filters
+filters_list :  /data/filters/wang2021/list.txt
+filters_dir :  /data/filters/wang2021/
+reference_filt : 0 # reference filter  index
+colors_result_path:  /results/colors/
+probas_result_path:  /results/probas/
+candidates: /candidates/cand_8/
+LIM_mag: [24.5,24.,24.,24.]
+#LIM_mag: [23.32,20.93,20.71,19.99,20.05,20.799,20.539]  #Corrected limags BAnados
+#mats_a
+#LIM_mag: [22.5,23.51,23.,22.9,23.  8,23.0,24,20.,20.]
+#This config line is to be adapted depending  not only on the filters list but also to the directory
+
+#wang2021
+#l : 356.0045982   # longitude
+#b : 23.2902204 # latitude
+#banados
+#l: 356
+#b: 23.29
+
+#Yang2020
+#l: 212.8082548
+#b: 52.4262530
+
+#matsuo b
+
+#l: 358.7382673
+#b:  50.3680107
+
+#YAng2019
+#l: 180.8618358
+#b: -53.7388331
+#Wang 2018
+
+#l: 107.9498347
+#b:  -77.9532882
+
+#matsuoka 2019 a
+#l: 298.6574161
+#b: 63.8198546
+
+#mortlock11 252.0474000
+#l: 252.0474000
+#b:  60.1882069
+
+
+
+
+#This config line is to be adapted depending  not only on the filters list but also to the directory
+redshift :
+  - 7.0
+  - 8.0
+  - 0.1
+redshift_g :
+  - 1
+  - 2
+  - 0.1
+magY:
+  - 18.0
+  - 25
+  - 0.1
+light_speed : 3.0e18
+cosmolgy : [70.0,0.3]
+EBmV : 0.02
+hR : 2250. # in parsecs   thin 225000000000000000000 normal 2250  then22500
+hZ : 330 # in parsecs    #normal 330 thick 330000000000000000
+Z_sol : 27. # in parsecs
+r_sol : 8600. # in parsecs
+SW : 1.2 # surface
+l : 236.8334697  # longitude
+b : 42.0921661 # latitude
+ZP : -48.572 # magnitude AB zero point
+const : 3631e-23

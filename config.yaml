@@ -1,0 +1,60 @@
+workdir : /home/mezziati/Documents/OWL-Z_V0.1
+
+#QSO
+templates_QSO :   /data/model_data/QSO/templates.list
+MABS_QSO_list :    /results/colors/log_qso.txt
+MABS_GAL_list :    /results/colors/log_gal.txt
+#GAL
+templates_GAL :  /data/model_data/GLX/BC03/log_temp.txt
+templates_QSO_dir :   /data/model_data/QSO/
+templates_GAL_dir :   /data/model_data/GLX/BC03/
+# MLT
+templates_MLT: /data/model_data/LT/MLT_star_templates/
+templates_M_list: /data/model_data/LT/MLT_star_templates/Mstars.txt
+templates_L_list: /data/model_data/LT/MLT_star_templates/Lstars.txt
+templates_T_list: /data/model_data/LT/MLT_star_templates/Tstars.txt
+
+SptM:  /data/model_data/LT/spt_M.dat
+SptL: /data/model_data/LT/spt_L.dat
+SptT:  /data/model_data/LT/spt_T.dat
+
+
+SptM_int:  /data/model_data/LT/spt_Mint.txt
+SptL_int: /data/model_data/LT/spt_Lint.txt
+SptT_int: /data/model_data/LT/spt_Tint.txt
+
+M_dens:  /data/model_data/LT/spt_M.txt   #Lstars
+L_dens: /data/model_data/LT/spt_L.txt   #Lstars
+T_dens:  /data/model_data/LT/spt_T.txt   #Lstars
+
+#Filters
+filters_list :  /data/filters/euclid/list.txt
+filters_dir :  /data/filters/euclid/
+reference_filt : 3 # reference filter  index
+colors_result_path:  /results/colors/
+probas_result_path:  /results/probas/COSMOS_5sigmaVIS/
+candidates: /data/candidates/COSMOS_5sigmaVIS/
+LIM_mag : [25.5,24,24,24]
+redshift :
+  - 6.5
+  - 12
+  - 0.05
+redshift_g :
+  - 1
+  - 2
+  - 0.1
+magY:
+  - 18.5
+  - 25
+  - 0.1
+light_speed : 3.0e18
+cosmolgy : [70.0,0.3]
+EBmV : 0.02
+hR : 2250. # in parsecs   thin 225000000000000000000 normal 2250  then22500
+hZ : 330 # in parsecs    #normal 330 thick 330000000000000000
+Z_sol : 27. # in parsecs
+r_sol : 8600. # in parsecs
+SW : 1. # surface
+
+ZP : -48.572 # magnitude AB zero point
+const : 3631e-23

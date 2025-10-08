@@ -1,0 +1,94 @@
+TASK 1 : Add RA DEC in OWLZ
+
+RA, DEC columns 1 and 2 of data candidates:
+use od DC:
+-LIKELIHOOD QSO
+-LIKELIHOOD MLT
+ ADD TO OBJ loop
+ DONE
+ 
+ Test, print (flux colums)
+ 
+
+ PRofiling advice:
+ 
+ 
+ loop over obj in MLT redundant, find a way to make all 3  MLT in one bid loop
+ 
+ RA,DEC dependancy successful 
+  test on probability on obj number 515 ( initial coord prob e-95, 250,40 test pq=e-90)
+  
+# TASK 2:  Profiling
+
+Obj: merge MLT loops into 1
+
+- Option one: keep same name variable and load them in  sed loops   ( Computing speeed negative)
+- Option 2: change variable name and load only once outside general loops (memory usage too big )   (BETTER => chosen)
+
+
+MLT fusion loops successs : code in dir Documents/GIT/
+
+
+# TASK 3: Generate 1000 positions inside Euclid WIDE footprint 
+
+steps: 
+
+turn footprint into mask ( need google) (nope) just rand from ra,dec
+
+flatten mask such as for each index i have access to (ra,dec)
+
+chose randompy one cell
+
+sleect randomly around that value 
+
+input value 
+
+do this 1000 times 
+
+merge poistions with ids
+
+SUCESS! pwd= /home/mezziati/Documents/These/Euclid.RA_dec_rand.py
+
+
+# TASK 4: merge positions with purity 1000 sq degress catalogue
+
+steps: 
+
+remove all objects with 0 detections in EUCLID VIS NIR bands 
+
+generate size< ra,dec for each obj within the surface
+
+To do that: grid needs to be finer ' 2D interpolation 
+
+then easy 
+
+final size for purity= 7e8
+initial grid size 5e4
+
+
+Problem: i have no idea where my 1000 sq  catalgue 
+to solve that I need avvess to the cluster: impossible to do from the train 
+
+SO next: make the grid finer ! 
+
+Interp 2 result 
+
+
+Result: no interpolation needede just first taking randomlt the coordinates
+then generating an array (ra,dec) of error between -1 and 1 and then addind them to the intial array
+
+Success !
+
+now find the purity catalogues when access to internet granted 
+
+
+
+
+
+
+
+
+
+
+
+ 
